@@ -54,8 +54,9 @@ mounts the `Movies` component. Add the `movies` data as props with the name
 the props variable in the parameters.
 
 Go to the React DevTools in your sandbox browser and click on the `Movies`
-component. In your `Movies` component, under `props`, you should now see the
-array of movies that you passed as props.
+component. (For now, just ignore all of the `.Provider` and `.Consumer` stuff.)
+In your `Movies` component, under `props`, you should now see the array of
+movies that you passed as props.
 
 Back to __components/Movies/index.js__, under the `h1` element, create a route
 that renders the `MovieDetails` component. The route should have a path of
