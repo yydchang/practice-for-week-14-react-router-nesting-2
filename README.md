@@ -25,8 +25,8 @@ load the practice into codesandbox.
 ### Option 2
 
 - Navigate to [codesandbox.io] and sign in. Click `Create Sandbox`, then choose
- `Import Project` from the sidebar. Paste the link to the starter repo and
- click `Import and Fork`.
+  `Import Project` from the sidebar. Paste the link to the starter repo and
+  click `Import and Fork`.
 
 ## Preparation
 
@@ -95,9 +95,7 @@ Inside the `MovieDetails` function, create a destructured `movieId` variable and
 assign it to an invoked useParams hook.
 
 ```js
-
 const { movieId } = useParams();
-
 ```
 
 Now `console.log` the `movieId` variable and take a look in the sandbox
