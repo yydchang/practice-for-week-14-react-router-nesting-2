@@ -75,7 +75,7 @@ be set dynamically to the title of the movie.
 > Hint, hint - Did you remember your imports?
 
 Each time you click a link you should now see the `MovieDetails` component with
-the `h1` text `MovieDetails Component` in the browser beneath the NavBar. You
+the `h1` text "MovieDetails Component" in the browser beneath the NavBar. You
 should also see the movie id change in the url address bar.
 
 Well done! You've just created a dynamically-generated nested route inside your
