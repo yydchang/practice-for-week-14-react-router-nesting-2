@@ -5,28 +5,10 @@ In this practice you will
 - Dynamically create nested routes
 - Use React Router's `useParams` hook to access path variables
 
-## Set up
+## Setup
 
-Make sure you are logged in to your [codesandbox.io] account.
-
-Navigate to the starter repo for this short practice by clicking the `Download
-Project` button at the bottom of the page. Use one of the following options to
-load the practice into codesandbox.
-
-### Option 1 (the simplest option)
-
-- In the url of the starter repo, append `box` to the word `github` and hit
-  `Enter` or `return` depending on your computer. You should be taken to
-  [codesandbox.io] and the app should be loaded for you.
-- Example: To load the repo at
-  `https://github.com/appacademy/functional-component-jsx` into codesandbox, you
-  would go to `https://githubbox.com/appacademy/functional-component-jsx`.
-
-### Option 2
-
-- Navigate to [codesandbox.io] and sign in. Click `Create Sandbox`, then choose
-  `Import Project` from the sidebar. Paste the link to the starter repo and
-  click `Import and Fork`.
+Click the `Download Project` button at the bottom of this page to go to the
+starter repo, then load the repo into [CodeSandbox].
 
 ## Preparation
 
@@ -61,12 +43,12 @@ movies that you passed as props.
 Back to __components/Movies/index.js__, under the `h1` element, create a route
 that renders the `MovieDetails` component. The route should have a path of
 `/movies/:movieId`. The `/:movieId` represents a variable for the parameter that
-you will be sending in the url. In this case it will be the id of the movie that
+you will be sending in the URL. In this case it will be the id of the movie that
 the user clicks on. (Also, go ahead and wrap your `Route` in a `Switch`
 component to make it easier to add more `Route`s later.)
 
 Next, create a `nav` element underneath the `h1` tag. Inside the `nav`, map
-through the `movies` prop. Return a `NavLink` for each movie. The url for the
+through the `movies` prop. Return a `NavLink` for each movie. The URL for the
 `NavLink` should start with `/movies` followed by a `/` and the actual `id` of
 the single movie. Use the `id` that you receive from each mapped movie object as
 the `movieId`. The clickable text that the user sees for the `NavLink` should
@@ -76,7 +58,7 @@ be set dynamically to the title of the movie.
 
 Each time you click a link you should now see the `MovieDetails` component with
 the `h1` text "MovieDetails Component" in the browser beneath the NavBar. You
-should also see the movie id change in the url address bar.
+should also see the movie id change in the URL address bar.
 
 Well done! You've just created a dynamically-generated nested route inside your
 `Movies` component.
@@ -89,7 +71,7 @@ In __Movies/index.js__, pass your `movies` prop to the `MovieDetails` component
 as `movies` inside your `Route`. Check your React DevTools as you did before.
 
 Now you will use the [useParams][use-params] hook. This hook will allow you to
-capture the movie id from the url.
+capture the movie id from the URL.
 
 Inside the `MovieDetails` function, create a destructured `movieId` variable and
 assign it to an invoked useParams hook.
@@ -115,11 +97,11 @@ data for the proper key/value choices.
 
 ## What you have learned
 
-**Congratulations!** In this practice you have learned how to:
+**Congratulations!** In this practice you have learned how to
 
 1. Create nested routes
 2. Generate routes dynamically
-3. Use the `useParams` hook to grab parameters from the url
+3. Use the `useParams` hook to grab parameters from the URL
 
-[codesandbox.io]: http://www.codesandbox.io
+[CodeSandbox]: https://www.codesandbox.io
 [use-params]: https://reactrouter.com/web/api/Hooks/useparams
