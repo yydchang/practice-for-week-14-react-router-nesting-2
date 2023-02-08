@@ -104,4 +104,4 @@ data for the proper key/value choices.
 3. Use the `useParams` hook to grab parameters from the URL
 
 [CodeSandbox]: https://www.codesandbox.io
-[use-params]: https://reactrouter.com/web/api/Hooks/useparams
+[use-params]: https://v5.reactrouter.com/web/api/Hooks/useparams
