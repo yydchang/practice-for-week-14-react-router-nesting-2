@@ -1,8 +1,7 @@
 import { NavLink, Route, Switch } from "react-router-dom";
 import MovieDetails from "../MovieDetails";
-import { movies } from "../../data/movieData";
 
-function Movies({ movies: { id, title, description } }) {
+function Movies({ movies }) {
   return (
     <div className="comp orange">
       <h1>Movies Component</h1>
@@ -17,7 +16,7 @@ function Movies({ movies: { id, title, description } }) {
       </nav>
       <Switch>
         <Route path="/movies/:movieId">
-          <MovieDetails />
+          <MovieDetails movies={movies} />
         </Route>
       </Switch>
     </div>
